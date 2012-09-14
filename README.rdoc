@@ -1,0 +1,14 @@
+
+
+I am attempting to convert the fantasy baseball site I made using mostly PHP to Rails.
+
+Steps:
+
+  1.  created app
+  2.  updated gemfiles based on my sample_app from Michael Hartl’s book
+  3.  configured Rails to use rspec
+  4.  setup git repository
+  5.  generated SitePages controller
+  6.  routed to home page in confib/routes.rb
+  7.  deleted public/index.html
+   
