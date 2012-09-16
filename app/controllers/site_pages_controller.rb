@@ -5,7 +5,7 @@ class SitePagesController < ApplicationController
   def standings
   end
 
-  def power_rankings
+  def powerrankings
   end
 
   def keepers
@@ -14,9 +14,9 @@ class SitePagesController < ApplicationController
   def history
   end
 
-  def team_bios
+  def teambios
   end
 
-  def fantasy_baseball_sites
+  def fantasybaseballsites
   end
 end

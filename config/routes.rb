@@ -1,17 +1,11 @@
 BaseballForLife::Application.routes.draw do
 root to: 'site_pages#home'
-  get "site_pages/standings"
-
-  get "site_pages/power_rankings"
-
-  get "site_pages/keepers"
-
-  get "site_pages/history"
-
-  get "site_pages/team_bios"
-
-  get "site_pages/fantasy_baseball_sites"
-
+  match '/standings', to: 'site_pages#standings'
+  match '/powerrankings', to: 'site_pages#powerrankings'
+  match '/keepers', to: 'site_pages#keepers'
+  match '/history', to: 'site_pages#history'
+  match '/teambios', to: 'site_pages#teambios'
+  match '/fantasybaseballsites', to: 'site_pages#fantasybaseballsites'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
