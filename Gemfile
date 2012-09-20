@@ -9,7 +9,7 @@ group :development, :test do
    	gem 'rspec-rails', '2.10.0'	# Uses rspec to run Test Driven Development Tests.
    	gem 'guard-rspec', '0.5.5'	# Rspec automatically runs Spec.
   	gem 'annotate', '2.5.0'	# Annotates Rails/ActiveRecord Models, routes, fixtures, and others based on the database schema.
-end
+  end
 
 group :assets do
    	gem 'sass-rails', '~> 3.2.3'	# Sass adapter for the Rails asset pipeline.
