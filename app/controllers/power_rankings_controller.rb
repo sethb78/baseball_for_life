@@ -1,0 +1,2 @@
+class PowerRankingsController < ApplicationController
+end

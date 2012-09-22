@@ -1,4 +1,8 @@
 BaseballForLife::Application.routes.draw do
+  get "members/new"
+
+  get "keepers/new"
+
   get "history_years/new"
 
 root to: 'site_pages#home'
