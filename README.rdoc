@@ -12,4 +12,4 @@ Steps:
   6.  routed to home page in confib/routes.rb
   7.  deleted public/index.html
   8.  created uploader.rb to upload data from tables in csv to sqlite
-  
+  9.  uploaded Yearly History, Team History, Member Info, and Power Rankings
