@@ -1,9 +1,15 @@
 BaseballForLife::Application.routes.draw do
+  get "users/new"
+
   get "members/new"
 
   get "keepers/new"
 
   get "history_years/new"
+
+  get "history_teams/new"
+
+  get "power_rankings/new"
 
 root to: 'site_pages#home'
   match '/standings', to: 'site_pages#standings'

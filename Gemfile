@@ -9,6 +9,11 @@ group :development, :test do
    	gem 'rspec-rails', '2.10.0'	# Uses rspec to run Test Driven Development Tests.
    	gem 'guard-rspec', '0.5.5'	# Rspec automatically runs Spec.
   	gem 'annotate', '2.5.0'	# Annotates Rails/ActiveRecord Models, routes, fixtures, and others based on the database schema.
+    gem 'growl' # Test results popup.
+    gem 'spork', '0.9.0'  # Speeds up tests, loads the environment once, and then maintains a pool of processes for running future tests. Spork is particularly useful when combined with Guard.
+    gem 'rb-notifu', '0.0.4'  # Notification system for windows.
+    gem 'win32console', '1.3.0' # Console allows controling the windows command line terminal thru an OO-interface.
+
   end
 
 group :assets do
@@ -20,11 +25,7 @@ end
 group :test do
    	gem 'capybara', '1.1.2'	# Capybara is an integration testing tool for rack based web applications. It simulates how a user would interact with a website.
    	gem 'rb-fchange', '0.0.5'	# A Ruby wrapper for Windows Kernel functions for monitoring the specified directory or subtree.
-   	gem 'rb-notifu', '0.0.4'	# Notification system for windows.
-   	gem 'win32console', '1.3.0'	# Console allows controling the windows command line terminal thru an OO-interface.
-   	gem 'growl'	# Test results popup.
-   	gem 'spork', '0.9.0'	# Speeds up tests, loads the environment once, and then maintains a pool of processes for running future tests. Spork is particularly useful when combined with Guard.
-end
+   	end
 
 group :production do
    	gem 'pg', '0.12.2'	# PostgreSQL, the database used bye Heroku, needed in production.
