@@ -1,5 +1,6 @@
 BaseballForLife::Application.routes.draw do
-  get "users/new"
+  resources :users
+ 
 
   get "members/new"
 
@@ -12,6 +13,10 @@ BaseballForLife::Application.routes.draw do
   get "power_rankings/new"
 
 root to: 'site_pages#home'
+match '/signup', to: 'users#new'
+  match '/signin', to: 'sessions#new'
+  match '/signout', to: 'sessions#destroy', via: :delete
+
   match '/standings', to: 'site_pages#standings'
   match '/powerrankings', to: 'site_pages#powerrankings'
   match '/keepers', to: 'site_pages#keepers'

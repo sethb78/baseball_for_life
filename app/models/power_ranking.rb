@@ -21,10 +21,5 @@ class PowerRanking < ActiveRecord::Base
   attr_accessible :Comments, :Date, :Dud, :LastWeek, :Move, :Rank, :Record, :Stud, :Team, :Week
 
 
-#def max_week 
-#	return PowerRanking.maximum(:Week)
-
-#end
-
 
 end

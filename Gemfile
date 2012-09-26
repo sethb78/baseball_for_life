@@ -25,7 +25,8 @@ end
 group :test do
    	gem 'capybara', '1.1.2'	# Capybara is an integration testing tool for rack based web applications. It simulates how a user would interact with a website.
    	gem 'rb-fchange', '0.0.5'	# A Ruby wrapper for Windows Kernel functions for monitoring the specified directory or subtree.
-   	end
+   	gem 'factory_girl_rails', '4.1.0'
+end
 
 group :production do
    	gem 'pg', '0.12.2'	# PostgreSQL, the database used bye Heroku, needed in production.
