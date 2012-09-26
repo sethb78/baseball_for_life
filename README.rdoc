@@ -16,3 +16,4 @@ Steps:
   10. went back to book, and created users model from chapter 6
   11. following chapter 7: created user-pages tests; signup form; updated header with user infomration
   12. setup SSL
+  13. pushed to Heroku with User Model
