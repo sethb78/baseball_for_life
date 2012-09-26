@@ -15,3 +15,4 @@ Steps:
   9.  uploaded Yearly History, Team History, Member Info, and Power Rankings
   10. went back to book, and created users model from chapter 6
   11. following chapter 7: created user-pages tests; signup form; updated header with user infomration
+  12. setup SSL
