@@ -1,21 +1,14 @@
 BaseballForLife::Application.routes.draw do
   resources :users
- 
+  resources :sessions, only: [:new, :create, :destroy]
 
-  get "members/new"
+  match '/signup',  to: 'users#new'
+  match '/signin',  to: 'sessions#new'
+  match '/signout', to: 'sessions#destroy', via: :delete
 
-  get "keepers/new"
 
-  get "history_years/new"
-
-  get "history_teams/new"
-
-  get "power_rankings/new"
 
 root to: 'site_pages#home'
-match '/signup', to: 'users#new'
-  match '/signin', to: 'sessions#new'
-  match '/signout', to: 'sessions#destroy', via: :delete
 
   match '/standings', to: 'site_pages#standings'
   match '/powerrankings', to: 'site_pages#powerrankings'

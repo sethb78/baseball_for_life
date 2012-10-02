@@ -25,7 +25,9 @@ end
 group :test do
    	gem 'capybara', '1.1.2'	# Capybara is an integration testing tool for rack based web applications. It simulates how a user would interact with a website.
    	gem 'rb-fchange', '0.0.5'	# A Ruby wrapper for Windows Kernel functions for monitoring the specified directory or subtree.
-   	gem 'factory_girl_rails', '4.1.0'
+   	gem 'factory_girl_rails', '4.1.0' # Used to define a User object.
+    gem 'cucumber-rails', '1.2.1', :require => false # Tool for behavior driven development.
+    gem 'database_cleaner', '0.7.0' # Works with Cucumber.
 end
 
 group :production do
