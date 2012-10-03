@@ -20,4 +20,4 @@ Steps:
   12. following chapter 8: created sessions controller for signing in and signing out
   13. installed Cucumber and created test
   14. pushed to github/heroku
-  
+  15. completed exercises in 8.5 (updated sessions/new.html.erb from form_for to form_tag and added utility function to spec/support/utilities.rb)
