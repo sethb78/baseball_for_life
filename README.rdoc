@@ -21,3 +21,7 @@ Steps:
   13. installed Cucumber and created test
   14. pushed to github/heroku
   15. completed exercises in 8.5 (updated sessions/new.html.erb from form_for to form_tag and added utility function to spec/support/utilities.rb)
+  16.  Completed Chapter 9, Updating, Showing, Deleting Users
+  17.  Re-read chapters 5-9
+  18.  Completed Chapter 9 exercises (http://ruby.railstutorial.org/chapters/updating-showing-and-deleting-users#sec-updating_deleting_exercises)
+  
