@@ -3,28 +3,36 @@ class UsersController < ApplicationController
   before_filter :correct_user,   only: [:edit, :update]
   before_filter :admin_user,     only: :destroy
 
-  def index
+   def index
     @users = User.paginate(page: params[:page])
   end
 
-  def new
-   @user=User.new
-  end
+
+
+def new
+  redirect_to(root_path) unless !signed_in?
+  @user=User.new
+end
+
 
   def show
     @user = User.find(params[:id])
   end
 
   def create
-   @user = User.new(params[:user])
-   if @user.save
-    sign_in @user
-    flash[:success] = "Welcome to the Sample App!"
-    redirect_to @user
+    if signed_in?
+      redirect_to(root_path)
     else
-    render 'new'
-   end
+      @user = User.new(params[:user])
+      if @user.save
+        sign_in @user
+        flash[:success] = "Welcome to the Sample App!"
+        redirect_to @user
+      else
+        render 'new'
+    end
   end
+end
 
   def edit
   end
@@ -39,11 +47,17 @@ class UsersController < ApplicationController
     end
   end
 
-  def destroy
-    User.find(params[:id]).destroy
-    flash[:success] = "User destroyed."
-    redirect_to users_url
+
+def destroy
+  user = User.find(params[:id])
+  if (user.admin?)
+    flash[:error] = "You cannot delete an Administrator!"
+  else
+    user.destroy
+    flash[:success] = "User destroyed. Name: #{user.name}"
   end
+  redirect_to users_path
+end
 
   private
 

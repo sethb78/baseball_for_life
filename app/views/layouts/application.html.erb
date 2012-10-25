@@ -9,14 +9,15 @@
 		<%= render 'layouts/shim' %>	<!-- If browser is less than I.E.9 -->
 	</head>
 	<body>
-		<%= render 'layouts/header' %>
+		
 		<div class="container">
+			<%= render 'layouts/header' %>
 			<% flash.each do |key, value| %>
         		<%= content_tag(:div, value, class: "alert alert-#{key}") %>
-            <% end %>
-		<%= yield %>
-		<%= debug(params) if Rails.env.development? %>
+            		<% end %>
+			<%= yield %>
+			<%= debug(params) if Rails.env.development? %>
+			<%= render 'layouts/footer' %>
 		</div>
-		<%= render 'layouts/footer' %>
 	</body>
 </html>

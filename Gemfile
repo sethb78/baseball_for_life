@@ -14,6 +14,7 @@ group :development, :test do
   	gem 'annotate', '2.5.0'	# Annotates Rails/ActiveRecord Models, routes, fixtures, and others based on the database schema.
     gem 'growl' # Test results popup.
     gem 'spork', '0.9.0'  # Speeds up tests, loads the environment once, and then maintains a pool of processes for running future tests. Spork is particularly useful when combined with Guard.
+    gem 'guard-spork', '1.2.0'
     gem 'rb-notifu', '0.0.4'  # Notification system for windows.
     gem 'win32console', '1.3.0' # Console allows controling the windows command line terminal thru an OO-interface.
 

@@ -26,6 +26,9 @@ $LightYellow:  #FFFF80;
 
 
 body{
+  .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+    width: 100%;
+  }
 background-image:url(background.jpg);
 position:relative; 
 padding:3% 7%;
@@ -87,12 +90,11 @@ h1{text-align:center}
   
 header{
   .title{
-    width:1100px;
     border-radius: 8px 8px 0 0;
     position:relative;
     height:120px;
     background-image:url(ball2copy.jpg);
-    background-repeat:no-repeat;background-size:1100px 120px;
+    background-repeat:no-repeat;background-size:100% 120px;
     background-color:#D3D3D7;
   }
   h1{
@@ -107,7 +109,6 @@ header{
   }
   .navbar{
     position:relative; 
-    width:1100px;
     padding:0;
     margin-top: -10px;
     border-radius:0 0 8px 8px; background-color:#ad5b47;
@@ -145,29 +146,29 @@ header{
 }
 
 
-
 footer{
-  width: 1100px;
-  height: 18px;
-  background-image: -moz-linear-gradient(center top , #ad5b47, #222222);
-  background-image: -webkit-gradient(linear, center top, center bottom, from(#ad5b47), to(#222222));
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ad5b47', endColorstr='#222222');
-  background-repeat: repeat-x;
-  border-radius: 8px ;
+  clear:both;
+  position:relative;
+  height: 38px;
+  background-color: #AD5B47;
+    background-image: -moz-linear-gradient(center top , #AD5B47, #222222);
+    background-repeat: repeat-x;
+    border-radius: 8px ;
   padding-top: 2px;
+  z-index: -1;
+  a{
+  font-size:15px; padding:10px;
+  color:white;
+  }
   small{
     float:left;
   }
   ul{
     float:right;
     list-style:none;
-  }
-  li{
-   display:inline;
-  }
-  a{
-  font-size:15px; padding:10px;
-  color:white;
+    li{
+      display:inline;
+    }
   }
 }
 
